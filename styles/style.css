@@ -9,12 +9,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .container{
     width: 870px;
     background-color: #FFFFFF;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
     
 }
 /* start top players css style  */
@@ -84,4 +87,57 @@ hr{
    color: #562EFF;
    text-decoration: none;
    
+}
+/* start latest course */
+.latest-course-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 0px;
+}
+.latest-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.course {
+    background-color: #ffffff;
+    border: 1px solid #dad9d9;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 11px;
+}
+.course-banner img{
+width: 246px;
+height: 141px;
+}
+.course-title{
+    font-size: 20.3px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+}
+.course-rating span {
+    margin-left: 8px;
+    font-size: 14.5px;
+    color: #A2A2A2;
+    margin-right: 20px;
+    font-weight: 400;
+}
+.fas.fa-star{
+    font-size: 12px;
+}
+.fas.fa-star.flild{
+    color: #FFC014;
+}
+.fas.fa-star.emty{
+    color: #AEAEAE;
+}
+.course-duration{
+    display: flex;
+    align-items: center;
+    color:#FF4A60;
+    font-size: 14.69px;
+}
+.course-duration .far.fa-clock{
+    margin-right: 6px;
 }
