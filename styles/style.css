@@ -64,6 +64,7 @@ hr{
 .top-blog{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
 }
 .blog{
     display: flex;
@@ -140,4 +141,44 @@ height: 141px;
 }
 .course-duration .far.fa-clock{
     margin-right: 6px;
+}
+
+/* star responsive  */
+/* small mobile devices */
+@media only screen and (max-width:480px){
+    .container{
+        width: 100%;
+    }
+    .players,.top-blog, .latest-courses{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .player{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* tabletes & large smartphone devices */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+   
+    .player{
+        align-items: center;
+        flex-direction: column;
+    }
+    .top-blog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        justify-content: center;
+    }
+    .latest-courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
